@@ -24,18 +24,18 @@ import { i, image } from "framer-motion/client";
         id: 4,
         title: "Groomsman",
         image: "/Mask group (3).png",
-        name:"Travis herron",
+        name:"Travis Herron",
         description:"Meet Travis Herron, my brother and co-founder, is the calm to my storm and my partner in countless memories, especially the fun debates with Salman over our startup. His steady presence sharpens my leadership and keeps me grounded. As a groomsman, he’s the epitome of loyalty, wisdom, and shared ambition."
     },{
         id: 5,
         title: "Bridesman",
         image: "/Mask group (4).png",
-        name:"nader al-Haq",
+        name:"Nader Al-Haq",
         description:"Meet Nader, my best friend and one of the most important people in my life. We bonded in 2014 over adventure and humor, creating countless memories since. Nader’s become family, and I’m beyond grateful for his support, laughter, and loyalty, especially on this special day."
     },{
         id: 6,
         title: "Groomsman",
-        name:"hardam Tripathi esq.",
+        name:"Hardam Tripathi Esq.",
         image: "/Mask group (5).png",
         description:"Meet Trip, When your attorney becomes a friend, then a client, you know the bond runs deep. I've seen him drunk, shared laughter and tears, and leaned on his unwavering support. More than a brother, he's my rock—someone I can count on in any storm and celebrate with in every joy."
     },{
@@ -65,13 +65,13 @@ import { i, image } from "framer-motion/client";
     },{
         id: 11,
         title: "Bridesmaid",
-        name:"ayesha tasmia",
+        name:"Ayesha Tasmia",
         image: "/Mask group (10).png",
         description:"Meet my New Yorker cousin, Ayesha. From road trips to endless phone calls, we’ve always been in sync, twinning in style and thoughts. Our deep conversations and shared laughter prove that great minds truly think alike. I’m lucky to have her as not just family, but a true kindred spirit."
     },{
         id: 12,
         title: "Groomsman",
-        name:"Shahriar sikder",
+        name:"Shahriar Sikder",
         image: "/Mask group (11).png",
         description:"Meet Shahriar Sikder, my dependable friend from USF, became a close bond through our shared passion for used cars. Reliable and always there when it counts, he’s the kind of friend who turns challenges into opportunities. Having him as a groomsman means having someone steadfast, supportive, and always ready to celebrate."
     }, 
