@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import {
   Menubar,
   MenubarContent,
@@ -18,6 +18,10 @@ import { RxCross2 } from "react-icons/rx";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const story = useRef(null);
+  const party = useRef(null);
+  const schedule = useRef(null);
+  const info = useRef(null);
 
   return (
     <header className="sticky top-6 left-0 right-0 z-50 bg-white  rounded-lg">
@@ -31,32 +35,53 @@ const Header = () => {
         <ul className=" justify-between items-center gap-10 tracking-[3px] hidden lg:flex">
           <li>
             <Link
-              href="#our-story"
+              href=""
               className="hover:text-primary transition-all  ease-in-out duration-300"
+              onClick={(e) => {
+                e.preventDefault();
+                const section = document.querySelector("#our-story");
+
+                section?.scrollIntoView({ behavior: "smooth", block: "start" });
+              }}
             >
               Our Story
             </Link>
           </li>
           <li>
             <Link
-              href="#party"
+              href=""
               className="hover:text-primary transition-all  ease-in-out duration-300"
+              onClick={(e) => {
+                e.preventDefault();
+                const section = document.querySelector("#party");
+                section?.scrollIntoView({ behavior: "smooth", block: "start" });
+              }}
             >
               Wedding Party
             </Link>
           </li>
           <li>
             <Link
-              href="#schedule"
+              href=""
               className="hover:text-primary transition-all  ease-in-out duration-300"
+              onClick={(e) => {
+                e.preventDefault();
+                const section = document.querySelector("#schedule");
+                section?.scrollIntoView({ behavior: "smooth", block: "start" });
+              }}
             >
               Schedule
             </Link>
           </li>
           <li>
             <Link
-              href="#info"
+              href=""
               className="hover:text-primary transition-all  ease-in-out duration-300"
+              onClick={(e) => {
+                e.preventDefault();
+                const section = document.querySelector("#info");
+                section?.scrollIntoView({ behavior: "smooth", block: "start" });
+              }}
             >
               Information
             </Link>
@@ -146,7 +171,19 @@ const Header = () => {
               }}
               className="text-2xl w-full h-fit p-5  bg-transparent text-primary hover:bg-primary hover:text-white font-light tracking-[3px] transition-all  ease-in-out duration-300"
             >
-              <Link href="#story">Our Story</Link>
+              <Link
+                href="#our-story"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const section = document.querySelector("#our-story");
+                  section?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
+                }}
+              >
+                Our Story
+              </Link>
             </Button>
             <Button
               onClick={(e) => {
@@ -155,7 +192,19 @@ const Header = () => {
               }}
               className="text-2xl w-full h-fit p-5  bg-transparent text-primary hover:bg-primary hover:text-white font-light tracking-[3px] transition-all  ease-in-out duration-300"
             >
-              <Link href="#party">Wedding Party</Link>
+              <Link
+                href=""
+                onClick={(e) => {
+                  e.preventDefault();
+                  const section = document.querySelector("#party");
+                  section?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
+                }}
+              >
+                Wedding Party
+              </Link>
             </Button>
 
             <Button
@@ -165,7 +214,19 @@ const Header = () => {
               }}
               className="text-2xl w-full h-fit p-5  bg-transparent text-primary hover:bg-primary hover:text-white font-light tracking-[3px] transition-all  ease-in-out duration-300"
             >
-              <Link href="#schedule">Schedule</Link>
+              <Link
+                href=""
+                onClick={(e) => {
+                  e.preventDefault();
+                  const section = document.querySelector("#schedule");
+                  section?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
+                }}
+              >
+                Schedule
+              </Link>
             </Button>
 
             <Button
@@ -175,7 +236,19 @@ const Header = () => {
               }}
               className="text-2xl w-full h-fit p-5  bg-transparent text-primary hover:bg-primary hover:text-white font-light tracking-[3px] transition-all  ease-in-out duration-300"
             >
-              <Link href="#info">Information</Link>
+              <Link
+                href=""
+                onClick={(e) => {
+                  e.preventDefault();
+                  const section = document.querySelector("#info");
+                  section?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
+                }}
+              >
+                Information
+              </Link>
             </Button>
           </div>
         </div>
