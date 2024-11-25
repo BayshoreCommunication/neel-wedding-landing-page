@@ -20,7 +20,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-6 left-0 right-0 z-50  rounded-lg">
+    <header className="sticky top-6 left-0 right-0 z-50 bg-white  rounded-lg">
       <nav className="flex justify-between items-center h-16 px-2">
         <div className="text-xl font-poppinsLight text-primary font-light">
           NEEL
