@@ -78,11 +78,11 @@ const CountdownTimer = () => {
 
       <div className=" ">{formatTime(timeRemaining)}</div>
       <div className="bg-primary w-28 h-0.5"></div>
-      <div className="text-poppinsRegular text-lg text-center whitespace-pre">
-        {`Welcome your guests to your website! A welcome message is great for
-building excitement for your day, but also to help them navigate their
-way around your wedding website. We also recommend signing off
-with a heartfelt thank you and prompt them to RSVP!`}
+      <div className="text-poppinsRegular text-lg text-center px-1 md:w-[636px] ">
+        Welcome your guests to your website! A welcome message is great for
+        building excitement for your day, but also to help them navigate their
+        way around your wedding website. We also recommend signing off with a
+        heartfelt thank you and prompt them to RSVP!
       </div>
       <div className="bg-primary w-28 h-0.5"></div>
     </div>
