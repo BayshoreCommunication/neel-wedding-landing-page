@@ -3,22 +3,28 @@ import cardData from "../config/cardData";
 import Image from "next/image";
 const WeddingParty = () => {
   return (
-    <section className="grid grid-cols-2 auto-cols-max content-center">
+    <section
+      id="party"
+      className=" grid grid-cols-2 auto-cols-max content-center pt-36 gap-x-40 gap-y-20 items-start"
+    >
+      <div className="col-span-2 text-5xl font-poppinsRegular text-center text-primary tracking-[3px]">
+        WEDDING PARTY
+      </div>
       {cardData.map((card) => (
         <div
-          className="flex flex-col justify-center items-center gap-2 pt-5"
+          className="flex flex-col justify-center items-center gap-2 pt-5 w-[535px]"
           key={card.id}
         >
           <div>
             <Image src={card.image} alt={card.name} width={100} height={100} />
           </div>
-          <div className="text-3xl font-poppinsLight text-primary tracking-[3px]">
+          <div className="text-3xl font-pinyon text-secondary ">
             {card.title}
           </div>
-          <div className="text-2xl font-poppinsLight text-primary tracking-[3px]">
+          <div className="text-4xl font-poppinsLight text-primary font-light tracking-[3px] py-4">
             {card.name}
           </div>
-          <div className="text-lg font-poppinsLight text-primary tracking-[3px]">
+          <div className="text-lg font-poppinsLight text-secondary  text-center pt-4">
             {card.description}
           </div>
         </div>
