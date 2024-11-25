@@ -27,14 +27,16 @@ const CountdownTimer = () => {
     }
   }, [countdownStarted, eventDate, timeRemaining]);
 
-  localStorage.setItem("eventDate", eventDate);
-
-  const formatDate = (date) => {
-    const options = { month: "long", day: "numeric", year: "numeric" };
-    return new Date(date).toLocaleDateString("en-US", options);
+  const formatDate = (date: string) => {
+    // const options = { month: "long", day: "numeric", year: "numeric" };
+    return new Date(date).toLocaleDateString("en-US", {
+      month: "long",
+      day: "numeric",
+      year: "numeric",
+    });
   };
 
-  const formatTime = (time) => {
+  const formatTime = (time: any) => {
     const seconds = Math.floor((time / 1000) % 60);
     const minutes = Math.floor((time / (1000 * 60)) % 60);
     const hours = Math.floor((time / (1000 * 60 * 60)) % 24);
