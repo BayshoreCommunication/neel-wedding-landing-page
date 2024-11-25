@@ -75,7 +75,8 @@ export default {
   			pinyon: ["Pinyon Script", "regular"]
   		},
   		backgroundImage: {
-  			heroImage: 'url("/headerBG.png")'
+  			heroImage: 'url("/headerBG.png")',
+			footerImage: 'url("/footerBG.png")'
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
