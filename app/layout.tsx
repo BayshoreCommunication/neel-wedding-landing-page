@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-white">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased container px-20 scroll-smooth font-poppinsRegular bg-white text-secondary pt-6`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth font-poppinsRegular bg-white text-secondary pt-6 px-[1rem] md:px-[2rem] lg:px-[4rem] xl:px-[5rem] 2xl:px-[10rem]`}
       >
         <Header />
         {children}

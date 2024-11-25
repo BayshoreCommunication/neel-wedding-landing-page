@@ -1,9 +1,8 @@
 import React from "react";
-import CountdownTimer from "./Countdown";
 
 const HeroSection = () => {
   return (
-    <section className="bg-heroImage bg-no-repeat bg-cover bg-center flex  flex-col justify-center items-center w-full h-[700px] pt-16">
+    <section className="bg-heroImage bg-no-repeat bg-cover bg-center flex  flex-col justify-center items-center w-full h-[700px] pt-10">
       <div className="text-5xl font-poppinsLight text-primary  tracking-[3px] pt-6">
         NEEL
       </div>
