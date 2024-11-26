@@ -18,7 +18,8 @@ const geistMono = localFont({
 
 export const metadata = {
   title: "N and J",
-  description: "",
+  description:
+    "Welcome to Neel and Jasifa’s Wedding Website! We are beyond excited to have you with us as we celebrate the love we've found in each other and the incredible blessing of having family and friends like you by our side. This website is your one-stop shop for all the details you’ll need to join us in making this day unforgettable—from the wedding schedule to RSVP instructions. We are so grateful for the support, joy, and memories you bring into our lives. Your presence means the world to us, and we can’t wait to celebrate this special chapter with you. Thank you for being part of our journey. We can’t wait to share this beautiful moment with you!",
   metadataBase: new URL("https://www.neelandjasifa.com"),
   alternates: {
     canonical: "/",
