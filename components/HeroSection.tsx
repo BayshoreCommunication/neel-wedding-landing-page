@@ -27,7 +27,7 @@ const HeroSection = () => {
           <p>Islamic Center of New England Mosque</p>
           <p>(ICNE) at Sharon</p>
         </HoverCardTrigger>
-        <HoverCardContent className="hover:border-primary cursor-pointer hover:text-primary transition-all ease-in-out duration-300">
+        <HoverCardContent className="hover:border-primary cursor-pointer hover:text-primary transition-all ease-in-out duration-300 ">
           <Link
             href="https://g.co/kgs/HZQzzx2"
             target="_blank"
