@@ -26,9 +26,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-white">
+    <html
+      lang="en"
+      className="bg-white text-secondary pt-6 px-[1rem] md:px-[2rem] lg:px-[4rem] xl:px-[5rem] 2xl:px-[10rem]"
+    >
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth font-poppinsRegular bg-white text-secondary pt-6 px-[1rem] md:px-[2rem] lg:px-[4rem] xl:px-[5rem] 2xl:px-[10rem]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth font-poppinsRegular `}
       >
         <Header />
         {children}

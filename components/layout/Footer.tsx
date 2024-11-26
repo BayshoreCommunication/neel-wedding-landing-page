@@ -1,5 +1,17 @@
 import Link from "next/link";
 import React from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { Input } from "../ui/input";
+import { Label } from "../ui/label";
+import { Button } from "../ui/button";
 
 const Footer = () => {
   return (
@@ -26,11 +38,12 @@ const Footer = () => {
           <p className="text-lg text-center text-secondary md:w-[515px] pb-6">
             Here are some recommended hotels around the Greater Boston area:
           </p>
-          <Link href={""} target="_blank">
-            <button className="btn bg-primary border-0 text-white font-light  hover:bg-primary text-lg cursor-default">
+          <Dialog>
+            <DialogTrigger className="btn bg-primary border-0 text-white font-light text-lg hover:bg-primary">
               SEE MORE
-            </button>
-          </Link>
+            </DialogTrigger>
+            <DialogContent className="">des </DialogContent>
+          </Dialog>
         </div>
         <div className="text-center">
           <p className="text-4xl text-center uppercase tracking-[3px] font-light pb-8 underline">
@@ -40,11 +53,12 @@ const Footer = () => {
             Here are some recommended restaurents around the Greater Boston
             area:
           </p>
-          <Link href={""} target="_blank">
-            <button className="btn text-center bg-primary border-0 text-white font-light  hover:bg-primary text-lg cursor-default">
+          <Dialog>
+            <DialogTrigger className="btn bg-primary border-0 text-white font-light text-lg hover:bg-primary">
               SEE MORE
-            </button>
-          </Link>
+            </DialogTrigger>
+            <DialogContent className="">des </DialogContent>
+          </Dialog>
         </div>
       </div>
     </footer>

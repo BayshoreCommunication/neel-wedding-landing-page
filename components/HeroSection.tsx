@@ -1,4 +1,11 @@
 import React from "react";
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card";
+import Link from "next/link";
+import ReservationForm from "./ReservationForm";
 
 const HeroSection = () => {
   return (
@@ -15,15 +22,23 @@ const HeroSection = () => {
       <div className="text-lg tracking-[1px] pt-8 font-light">
         January 5, 2025
       </div>
-      <div className="flex flex-col justify-center items-center py-3 tracking-[1px]  font-light">
-        <p>Islamic Center of New England Mosque</p>
-        <p>(ICNE) at Sharon</p>
-      </div>
-      <div>
-        <button className="btn bg-primary border-0 text-white font-light text-lg hover:bg-primary">
-          RSVP
-        </button>
-      </div>
+      <HoverCard>
+        <HoverCardTrigger className="flex flex-col justify-center items-center py-3 tracking-[1px]  font-light cursor-pointer">
+          <p>Islamic Center of New England Mosque</p>
+          <p>(ICNE) at Sharon</p>
+        </HoverCardTrigger>
+        <HoverCardContent className="hover:border-primary cursor-pointer hover:text-primary transition-all ease-in-out duration-300">
+          <Link
+            href="https://g.co/kgs/HZQzzx2"
+            target="_blank"
+            className="font-light"
+          >
+            https://g.co/kgs/HZQzzx2
+          </Link>
+        </HoverCardContent>
+      </HoverCard>
+
+      <ReservationForm />
     </section>
   );
 };

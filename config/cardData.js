@@ -22,10 +22,10 @@ import { i, image } from "framer-motion/client";
         description:"Meet Purna, my diaper bestie and neighbor turned soulmate. From childhood to adulthood, we've shared laughter, milestones, and dreams of raising kids together. She's my best friend, wifey, and constant source of love. I'm grateful for our lifelong friendship and the joy of having her as family."
     },{
         id: 4,
-        title: "Groomsman",
+        title: "Groomsmaid",
         image: "/Mask group (3).png",
-        name:"Travis Herron",
-        description:"Meet Travis Herron, my brother and co-founder, is the calm to my storm and my partner in countless memories, especially the fun debates with Salman over our startup. His steady presence sharpens my leadership and keeps me grounded. As a groomsman, he’s the epitome of loyalty, wisdom, and shared ambition."
+        name:"Esha",
+        description:"Esha and I started working together during the early days of Bayshore back in Bangladesh. Now, as we both thrive in Florida, her unwavering support through my toughest times has been a cornerstone of my journey. Loyal and dependable, Esha embodies resilience and true friendship."
     },{
         id: 5,
         title: "Bridesman",
@@ -35,9 +35,9 @@ import { i, image } from "framer-motion/client";
     },{
         id: 6,
         title: "Groomsman",
-        name:"Hardam Tripathi Esq.",
-        image: "/Mask group (5).png",
-        description:"Meet Trip, When your attorney becomes a friend, then a client, you know the bond runs deep. I've seen him drunk, shared laughter and tears, and leaned on his unwavering support. More than a brother, he's my rock—someone I can count on in any storm and celebrate with in every joy."
+        name:"Al Saki",
+        image: "/Mask group (5).jpeg",
+        description:"Al Saki, once my math tutor, became a lifelong friend after we survived a road crash together. We’ve collaborated on numerous shoots and productions, building a bond of resilience and creativity. His talent, loyalty, and unwavering support make him the perfect groomsman, representing strength and shared memories in my journey."
     },{
         id: 7,
         title: "Bridesman",
