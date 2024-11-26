@@ -46,27 +46,35 @@ const CountdownTimer = () => {
     return (
       <div className="countdown-display flex justify-center items-center gap-4 text-5xl">
         <div className="countdown-value flex justify-center items-center flex-col">
-          <button className="btn w-14 h-16 bg-primary border-0 text-white font-light  hover:bg-primary text-xl cursor-default">
-            {days.toString().padStart(2, "0")}
-          </button>
+          <ScrollMotionEffect effect="flip-up" duration={2000}>
+            <button className="btn w-14 h-16 bg-primary border-0 text-white font-light  hover:bg-primary text-xl cursor-default">
+              {days.toString().padStart(2, "0")}
+            </button>
+          </ScrollMotionEffect>
           <span className="text-sm">Days</span>
         </div>
         <div className="countdown-value flex justify-center items-center flex-col">
-          <button className="btn w-14 h-16  bg-primary border-0 text-white font-light  hover:bg-primary text-xl cursor-default">
-            {hours.toString().padStart(2, "0")}
-          </button>
+          <ScrollMotionEffect effect="flip-up" duration={2000}>
+            <button className="btn w-14 h-16  bg-primary border-0 text-white font-light  hover:bg-primary text-xl cursor-default">
+              {hours.toString().padStart(2, "0")}
+            </button>
+          </ScrollMotionEffect>
           <span className="text-sm">Hours</span>
         </div>
         <div className="countdown-value flex justify-center items-center flex-col">
-          <button className="btn w-14 h-16  bg-primary border-0 text-white font-light  hover:bg-primary text-xl cursor-default">
-            {minutes.toString().padStart(2, "0")}
-          </button>
+          <ScrollMotionEffect effect="flip-up" duration={2000}>
+            <button className="btn w-14 h-16  bg-primary border-0 text-white font-light  hover:bg-primary text-xl cursor-default">
+              {minutes.toString().padStart(2, "0")}
+            </button>
+          </ScrollMotionEffect>
           <span className="text-sm">Minutes</span>
         </div>
         <div className="countdown-value flex justify-center items-center flex-col">
-          <button className="btn w-14 h-16  bg-primary border-0 text-white font-light  hover:bg-primary text-xl cursor-default">
-            {seconds.toString().padStart(2, "0")}
-          </button>
+          <ScrollMotionEffect effect="flip-up" duration={2000}>
+            <button className="btn w-14 h-16  bg-primary border-0 text-white font-light  hover:bg-primary text-xl cursor-default">
+              {seconds.toString().padStart(2, "0")}
+            </button>
+          </ScrollMotionEffect>
           <span className="text-sm">Seconds</span>
         </div>
       </div>
@@ -75,11 +83,11 @@ const CountdownTimer = () => {
 
   return (
     <div className="countdown-timer-container flex flex-col justify-center items-center gap-4 relative -top-10 w-full">
-      <ScrollMotionEffect effect="fade-left" duration={2000}>
+      <ScrollMotionEffect effect="fade-up" duration={2000}>
         <h2 className="countdown-name font-semibold text-2xl">COUNTDOWN</h2>
       </ScrollMotionEffect>
 
-      <ScrollMotionEffect effect="fade-right" duration={2000}>
+      <ScrollMotionEffect effect="fade-up" duration={2000}>
         <h2 className="countdown-name font-semibold text-2xl">
           <div className=" ">{formatTime(timeRemaining)}</div>
         </h2>

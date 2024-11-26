@@ -32,8 +32,6 @@ const Footer = () => {
           <p className="text-4xl text-center uppercase tracking-[3px] font-light pb-8">
             Uber/Lyft
           </p>
-        </ScrollMotionEffect>
-        <ScrollMotionEffect effect="fade-up" duration={2000}>
           <p className="text-lg text-center text-secondary md:w-[515px]">
             You can Uber or Lyft to the mosque, should cost between $30.00-50.00
           </p>
@@ -87,11 +85,11 @@ const Footer = () => {
                   </Link>
                 </div>
                 <div className=" flex flex-col justify-center items-center text-primary gap-2">
-                  <ScrollMotionEffect effect="fade-up" duration={2000}>
-                    <div className="tooltip font-light text-2xl relative ">
-                      DoubleTree Suites by Hilton Hotel Boston - Cambridge
-                    </div>
-                  </ScrollMotionEffect>
+                  {/* <ScrollMotionEffect effect="fade-up" duration={2000}> */}
+                  <div className="tooltip font-light text-2xl relative ">
+                    DoubleTree Suites by Hilton Hotel Boston - Cambridge
+                  </div>
+                  {/* </ScrollMotionEffect> */}
 
                   <Link
                     href="https://www.booking.com/hotel/us/doubletree-guest-suites-boston.en-gb.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaJgCiAECmAExuAEHyAEN2AEB6AEB-AECiAIBqAIDuALVzP65BsACAdICJDQ2YTcwMDEwLTdhOTAtNDVkNy1iNjE4LTEzZTIxNTVkYzY0ZdgCBeACAQ&sid=c5fab9727a42f87f6865fca69901e3ee&all_sr_blocks=2876522_402989808_2_2_0&checkin=2025-01-04&checkout=2025-01-06&dest_id=20061717&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=19&highlighted_blocks=2876522_402989808_2_2_0&hpos=19&keep_landing=1&matching_block_id=2876522_402989808_2_2_0&no_rooms=1&req_adults=2&req_children=0&sb_price_type=total&sr_order=popularity&sr_pri_blocks=2876522_402989808_2_2_0__27030&srepoch=1732224698&srpvid=dae6975abbe806e4&type=total&ucfs=1&"
