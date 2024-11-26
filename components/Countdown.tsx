@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import ScrollMotionEffect from "./motion/ScrollMotionEffect";
 
 const CountdownTimer = () => {
   const eventDate = "Jan 5, 2025";
@@ -74,17 +75,30 @@ const CountdownTimer = () => {
 
   return (
     <div className="countdown-timer-container flex flex-col justify-center items-center gap-4 relative -top-10 w-full">
-      <h2 className="countdown-name font-semibold text-2xl">COUNTDOWN</h2>
+      <ScrollMotionEffect effect="fade-left" duration={2000}>
+        <h2 className="countdown-name font-semibold text-2xl">COUNTDOWN</h2>
+      </ScrollMotionEffect>
 
-      <div className=" ">{formatTime(timeRemaining)}</div>
-      <div className="bg-primary w-28 h-0.5"></div>
-      <div className="text-poppinsRegular text-lg text-center px-1 md:w-[636px] ">
-        Welcome your guests to your website! A welcome message is great for
-        building excitement for your day, but also to help them navigate their
-        way around your wedding website. We also recommend signing off with a
-        heartfelt thank you and prompt them to RSVP!
-      </div>
-      <div className="bg-primary w-28 h-0.5"></div>
+      <ScrollMotionEffect effect="fade-right" duration={2000}>
+        <h2 className="countdown-name font-semibold text-2xl">
+          <div className=" ">{formatTime(timeRemaining)}</div>
+        </h2>
+        <div className="flex justify-center py-5">
+          <div className="bg-primary w-28 h-0.5"></div>
+        </div>
+      </ScrollMotionEffect>
+
+      <ScrollMotionEffect effect="fade-up" duration={2000}>
+        <div className="text-poppinsRegular text-lg text-center px-1 md:w-[636px] ">
+          Welcome your guests to your website! A welcome message is great for
+          building excitement for your day, but also to help them navigate their
+          way around your wedding website. We also recommend signing off with a
+          heartfelt thank you and prompt them to RSVP!
+        </div>
+        <div className="flex justify-center py-5">
+          <div className="bg-primary w-28 h-0.5"></div>
+        </div>
+      </ScrollMotionEffect>
     </div>
   );
 };

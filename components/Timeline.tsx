@@ -372,17 +372,17 @@ const Timeline = () => {
         <li className="h-60">
           <div className="timeline-end ">
             <div className="flex flex-col justify-start items-start gap-6 relative translate-y-14 text-nowrap pl-[4rem] ">
-              <ScrollMotionEffect effect="fade-u" duration={2000}>
-                <div className="text-3xl font-pinyon text-secondary ">
-                  Day of the Wedding
-                </div>
-              </ScrollMotionEffect>
+              <div className="text-3xl font-pinyon text-secondary ">
+                Day of the Wedding
+              </div>
+
               <div className="text-3xl tracking-[4px] uppercase font-light">
                 Starting
               </div>
               <div className="text-lg text-secondary">3:30 pm</div>
             </div>
           </div>
+
           <div className="timeline-middle  rounded-full border-[2px] border-primary">
             <FaCircle
               className="w-2 h-2 bg-white rounded-full"

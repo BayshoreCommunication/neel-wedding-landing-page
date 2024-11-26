@@ -13,6 +13,7 @@ import { Input } from "../ui/input";
 import { Label } from "../ui/label";
 import { Button } from "../ui/button";
 import Image from "next/image";
+import ScrollMotionEffect from "../motion/ScrollMotionEffect";
 
 const Footer = () => {
   return (
@@ -20,29 +21,43 @@ const Footer = () => {
       id="info"
       className="bg-footerImage bg-center bg-cover h-[1080px] flex flex-col justify-start items-center pt-36 text-primary gap-24"
     >
-      <div className="text-5xl font-poppinsLight text-primary tracking-[6px]">
-        INFORMATION
-      </div>
+      <ScrollMotionEffect effect="flip-left" duration={2000}>
+        <div className="text-5xl font-poppinsLight text-primary tracking-[6px]">
+          INFORMATION
+        </div>
+      </ScrollMotionEffect>
+
       <div className="flex flex-col justify-center items-center gap-10">
-        <div>
+        <ScrollMotionEffect effect="flip-left" duration={2000}>
           <p className="text-4xl text-center uppercase tracking-[3px] font-light pb-8">
             Uber/Lyft
           </p>
+        </ScrollMotionEffect>
+        <ScrollMotionEffect effect="fade-up" duration={2000}>
           <p className="text-lg text-center text-secondary md:w-[515px]">
             You can Uber or Lyft to the mosque, should cost between $30.00-50.00
           </p>
-        </div>
+        </ScrollMotionEffect>
+
         <div className="text-center">
-          <p className="text-4xl text-center uppercase tracking-[3px] font-light pb-8 underline">
-            Hotels
-          </p>
-          <p className="text-lg text-center text-secondary md:w-[515px] pb-6">
-            Here are some recommended hotels around the Greater Boston area:
-          </p>
+          <ScrollMotionEffect effect="flip-left" duration={2000}>
+            <p className="text-4xl text-center uppercase tracking-[3px] font-light pb-8 underline">
+              Hotels
+            </p>
+          </ScrollMotionEffect>
+          <ScrollMotionEffect effect="fade-up" duration={2000}>
+            <p className="text-lg text-center text-secondary md:w-[515px] pb-6">
+              Here are some recommended hotels around the Greater Boston area:
+            </p>
+          </ScrollMotionEffect>
+
           <Dialog>
-            <DialogTrigger className="btn bg-primary border-0 text-white font-light text-lg hover:bg-primary">
-              SEE MORE
-            </DialogTrigger>
+            <ScrollMotionEffect effect="fade-up" duration={2000}>
+              <DialogTrigger className="btn bg-primary border-0 text-white font-light text-lg hover:bg-primary">
+                SEE MORE
+              </DialogTrigger>
+            </ScrollMotionEffect>
+
             <DialogContent className="">
               <div className="grid gap-8 py-4">
                 <div className=" flex flex-col justify-center items-center text-primary gap-2">
@@ -72,9 +87,11 @@ const Footer = () => {
                   </Link>
                 </div>
                 <div className=" flex flex-col justify-center items-center text-primary gap-2">
-                  <div className="tooltip font-light text-2xl relative ">
-                    DoubleTree Suites by Hilton Hotel Boston - Cambridge
-                  </div>
+                  <ScrollMotionEffect effect="fade-up" duration={2000}>
+                    <div className="tooltip font-light text-2xl relative ">
+                      DoubleTree Suites by Hilton Hotel Boston - Cambridge
+                    </div>
+                  </ScrollMotionEffect>
 
                   <Link
                     href="https://www.booking.com/hotel/us/doubletree-guest-suites-boston.en-gb.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaJgCiAECmAExuAEHyAEN2AEB6AEB-AECiAIBqAIDuALVzP65BsACAdICJDQ2YTcwMDEwLTdhOTAtNDVkNy1iNjE4LTEzZTIxNTVkYzY0ZdgCBeACAQ&sid=c5fab9727a42f87f6865fca69901e3ee&all_sr_blocks=2876522_402989808_2_2_0&checkin=2025-01-04&checkout=2025-01-06&dest_id=20061717&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=19&highlighted_blocks=2876522_402989808_2_2_0&hpos=19&keep_landing=1&matching_block_id=2876522_402989808_2_2_0&no_rooms=1&req_adults=2&req_children=0&sb_price_type=total&sr_order=popularity&sr_pri_blocks=2876522_402989808_2_2_0__27030&srepoch=1732224698&srpvid=dae6975abbe806e4&type=total&ucfs=1&"
@@ -102,17 +119,26 @@ const Footer = () => {
           </Dialog>
         </div>
         <div className="text-center">
-          <p className="text-4xl text-center uppercase tracking-[3px] font-light pb-8 underline">
-            Restaurants
-          </p>
-          <p className="text-lg text-center text-secondary md:w-[515px] pb-6">
-            Here are some recommended restaurents around the Greater Boston
-            area:
-          </p>
+          <ScrollMotionEffect effect="flip-left" duration={2000}>
+            <p className="text-4xl text-center uppercase tracking-[3px] font-light pb-8 underline">
+              Restaurants
+            </p>
+          </ScrollMotionEffect>
+
+          <ScrollMotionEffect effect="fade-up" duration={2000}>
+            <p className="text-lg text-center text-secondary md:w-[515px] pb-6">
+              Here are some recommended restaurents around the Greater Boston
+              area:
+            </p>
+          </ScrollMotionEffect>
+
           <Dialog>
-            <DialogTrigger className="btn bg-primary border-0 text-white font-light text-lg hover:bg-primary">
-              SEE MORE
-            </DialogTrigger>
+            <ScrollMotionEffect effect="fade-up" duration={2000}>
+              <DialogTrigger className="btn bg-primary border-0 text-white font-light text-lg hover:bg-primary">
+                SEE MORE
+              </DialogTrigger>
+            </ScrollMotionEffect>
+
             <DialogContent className="">
               <div className="grid gap-8 py-8">
                 <div className=" flex flex-col justify-center items-center text-primary gap-2">
