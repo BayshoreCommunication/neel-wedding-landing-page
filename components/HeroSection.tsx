@@ -55,7 +55,7 @@ const HeroSection = () => {
       </motion.div>
       <motion.div variants={variants}>
         <HoverCard>
-          <HoverCardTrigger className="flex flex-col justify-center items-center py-3 tracking-[1px]  font-light cursor-pointer hover:text-primary transition-all ease-in-out duration-300">
+          <HoverCardTrigger className="flex flex-col justify-center items-center py-3 tracking-[1px]  font-light cursor-pointer hover:text-primary transition-all ease-in-out duration-300 underline">
             <p>Islamic Center of New England Mosque</p>
             <p>(ICNE) at Sharon</p>
           </HoverCardTrigger>
