@@ -13,9 +13,9 @@ const Schedule = () => {
           SCHEDULE
         </div>
       </ScrollMotionEffect>
-      <ScrollMotionEffect effect="fade-up" duration={2000}>
-        <Timeline />
-      </ScrollMotionEffect>
+      {/* <ScrollMotionEffect effect="fade-in" duration={2000}> */}
+      <Timeline />
+      {/* </ScrollMotionEffect> */}
     </div>
   );
 };
