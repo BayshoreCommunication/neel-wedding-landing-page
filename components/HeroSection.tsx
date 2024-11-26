@@ -23,7 +23,7 @@ const HeroSection = () => {
         January 5, 2025
       </div>
       <HoverCard>
-        <HoverCardTrigger className="flex flex-col justify-center items-center py-3 tracking-[1px]  font-light cursor-pointer">
+        <HoverCardTrigger className="flex flex-col justify-center items-center py-3 tracking-[1px]  font-light cursor-pointer hover:text-primary transition-all ease-in-out duration-300">
           <p>Islamic Center of New England Mosque</p>
           <p>(ICNE) at Sharon</p>
         </HoverCardTrigger>

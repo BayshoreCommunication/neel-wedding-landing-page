@@ -82,7 +82,9 @@ const ReservationForm = () => {
             </div>
           </div>
           <DialogFooter className="place-self-center">
-            <Button type="submit">Save changes</Button>
+            <Button type="submit" className="px-10 text-lg font-light ">
+              Submit
+            </Button>
           </DialogFooter>
         </DialogContent>
       </Dialog>
