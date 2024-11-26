@@ -47,7 +47,7 @@ const cardData = [
     name: "Al Saki",
     image: "/Mask group (5).jpeg",
     description:
-      "Al Saki, once my math tutor, became a lifelong friend after we survived a road crash together. We’ve collaborated on numerous shoots and productions, building a bond of resilience and creativity. His talent, loyalty, and unwavering support make him the perfect groomsman, representing strength and shared memories in my journey.",
+      "Meet Al Saki, once my math tutor, became a lifelong friend after we survived a road crash together. We’ve collaborated on numerous shoots and productions, building a bond of resilience and creativity. His talent, loyalty, and unwavering support make him the perfect groomsman, representing strength and shared memories in my journey.",
   },
   {
     id: 7,
