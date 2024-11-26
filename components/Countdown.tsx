@@ -98,10 +98,17 @@ const CountdownTimer = () => {
 
       <ScrollMotionEffect effect="fade-up" duration={2000}>
         <div className="text-poppinsRegular text-lg text-center px-1 md:w-[636px] ">
-          Welcome your guests to your website! A welcome message is great for
-          building excitement for your day, but also to help them navigate their
-          way around your wedding website. We also recommend signing off with a
-          heartfelt thank you and prompt them to RSVP!
+          <p className="py-2">{`Welcome to Neel and Jasifa’s Wedding Website!`}</p>
+
+          <p className="py-2">{`We are beyond excited to have you with us as we celebrate the love we've found in each other and the incredible blessing of having family and friends like you by our side. This website is your one-stop shop for all the details you’ll need to join us in making this day unforgettable—from the wedding schedule to RSVP instructions. `}</p>
+
+          <p className="py-2">
+            {`We are so grateful for the support, joy, and memories you bring into our lives. Your presence means the world to us, and we can’t wait to celebrate this special chapter with you.`}
+          </p>
+
+          <p className="py-2">
+            {`Thank you for being part of our journey. We can’t wait to share this beautiful moment with you!`}
+          </p>
         </div>
         <div className="flex justify-center py-5">
           <div className="bg-primary w-28 h-0.5"></div>
