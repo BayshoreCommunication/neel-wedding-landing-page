@@ -31,7 +31,7 @@ const HeroSection = () => {
           <Link
             href="https://g.co/kgs/HZQzzx2"
             target="_blank"
-            className="font-light"
+            className="font-light text-center"
           >
             https://g.co/kgs/HZQzzx2
           </Link>
