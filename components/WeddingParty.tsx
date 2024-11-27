@@ -15,31 +15,34 @@ const WeddingParty = () => {
           </h2>
         </ScrollMotionEffect>
       </div>
+
       {cardData.map((card) => (
-        <ScrollMotionEffect effect="fade-up" duration={2000} key={card.id}>
-          <div
-            className="flex flex-col items-center gap-2 pt-5 md:w-2/3 lg:w-[535px]"
-            key={card.id}
-          >
-            <div>
-              <Image
-                src={card.image}
-                alt={card.name}
-                width={100}
-                height={100}
-                className="rounded-full"
-              />
+        <ScrollMotionEffect effect="zoom-in" duration={2000} key={card.id}>
+          <ScrollMotionEffect effect="fade-up" duration={2000} key={card.id}>
+            <div
+              className="flex flex-col justify-center items-center gap-2 pt-5 md:w-2/3 lg:w-[535px] m-auto "
+              key={card.id}
+            >
+              <div>
+                <Image
+                  src={card.image}
+                  alt={card.name}
+                  width={100}
+                  height={100}
+                  className="rounded-full"
+                />
+              </div>
+              <div className="text-3xl font-pinyon text-secondary text-center">
+                {card.title}
+              </div>
+              <div className="text-4xl font-poppinsLight text-primary font-light tracking-[3px] py-4 text-center">
+                {card.name}
+              </div>
+              <div className="text-lg font-poppinsLight text-secondary  text-center pt-4">
+                {card.description}
+              </div>
             </div>
-            <div className="text-3xl font-pinyon text-secondary text-center">
-              {card.title}
-            </div>
-            <div className="text-4xl font-poppinsLight text-primary font-light tracking-[3px] py-4 text-center">
-              {card.name}
-            </div>
-            <div className="text-lg font-poppinsLight text-secondary  text-center pt-4">
-              {card.description}
-            </div>
-          </div>
+          </ScrollMotionEffect>
         </ScrollMotionEffect>
       ))}
     </section>

@@ -96,6 +96,13 @@ const cardData = [
     image: "/Mask group (11).png",
     description:
       "Meet Shahriar Sikder, my dependable friend from USF, became a close bond through our shared passion for used cars. Reliable and always there when it counts, he’s the kind of friend who turns challenges into opportunities. Having him as a groomsman means having someone steadfast, supportive, and always ready to celebrate.",
+  },{
+    id: 13,
+    title: "Bridesmaid",
+    name: "Jessica Saravia",
+    image: "/Mask group (12).jpg",
+    description:
+      "Meet Jessica, Jessica and I went from being coworker to close friend over the years. We've faced challenges together at work and in life, and she's always been there with unwavering support and great advice. Her loyalty and friendship mean everything to me, and I’m so grateful to have her by my side on this big day of mines.",
   },
 ];
 

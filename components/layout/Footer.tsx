@@ -21,14 +21,14 @@ const Footer = () => {
       id="info"
       className="bg-footerImage bg-center bg-cover h-[1080px] flex flex-col justify-start items-center pt-36 text-primary gap-24"
     >
-      <ScrollMotionEffect effect="flip-left" duration={2000}>
+      <ScrollMotionEffect effect="zoom-in" duration={2000}>
         <div className="text-5xl font-poppinsLight text-primary tracking-[6px]">
           INFORMATION
         </div>
       </ScrollMotionEffect>
 
       <div className="flex flex-col justify-center items-center gap-10">
-        <ScrollMotionEffect effect="flip-left" duration={2000}>
+        <ScrollMotionEffect effect="zoom-in" duration={2000}>
           <p className="text-4xl text-center uppercase tracking-[3px] font-light pb-8">
             Uber/Lyft
           </p>
@@ -38,19 +38,19 @@ const Footer = () => {
         </ScrollMotionEffect>
 
         <div className="text-center">
-          <ScrollMotionEffect effect="flip-left" duration={2000}>
+          <ScrollMotionEffect effect="zoom-in" duration={2000}>
             <p className="text-4xl text-center uppercase tracking-[3px] font-light pb-8 underline">
               Hotels
             </p>
           </ScrollMotionEffect>
-          <ScrollMotionEffect effect="fade-up" duration={2000}>
+          <ScrollMotionEffect effect="zoom-in" duration={2000}>
             <p className="text-lg text-center text-secondary md:w-[515px] pb-6">
               Here are some recommended hotels around the Greater Boston area:
             </p>
           </ScrollMotionEffect>
 
           <Dialog>
-            <ScrollMotionEffect effect="fade-up" duration={2000}>
+            <ScrollMotionEffect effect="zoom-in" duration={2000}>
               <DialogTrigger className="btn bg-primary border-0 text-white font-light text-lg hover:bg-primary">
                 SEE MORE
               </DialogTrigger>
@@ -117,13 +117,13 @@ const Footer = () => {
           </Dialog>
         </div>
         <div className="text-center">
-          <ScrollMotionEffect effect="flip-left" duration={2000}>
+          <ScrollMotionEffect effect="zoom-in" duration={2000}>
             <p className="text-4xl text-center uppercase tracking-[3px] font-light pb-8 underline">
               Restaurants
             </p>
           </ScrollMotionEffect>
 
-          <ScrollMotionEffect effect="fade-up" duration={2000}>
+          <ScrollMotionEffect effect="zoom-in" duration={2000}>
             <p className="text-lg text-center text-secondary md:w-[515px] pb-6">
               Here are some recommended restaurents around the Greater Boston
               area:
@@ -131,7 +131,7 @@ const Footer = () => {
           </ScrollMotionEffect>
 
           <Dialog>
-            <ScrollMotionEffect effect="fade-up" duration={2000}>
+            <ScrollMotionEffect effect="zoom-in" duration={2000}>
               <DialogTrigger className="btn bg-primary border-0 text-white font-light text-lg hover:bg-primary">
                 SEE MORE
               </DialogTrigger>

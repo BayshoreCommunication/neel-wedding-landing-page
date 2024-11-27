@@ -8,9 +8,9 @@
 
 :root {
   scroll-behavior: smooth;
-  --primary:#f1f1f1;
-  --secondary:#BEA277;
-  --tertiary:#ffffff;
+  --primary: #f1f1f1;
+  --secondary: #bea277;
+  --tertiary: #ffffff;
 }
 ::-webkit-scrollbar {
   width: 20px;
@@ -42,21 +42,12 @@
   background-color: var(--tertiary);
 }
 
-
-
 body {
   font-family: Arial, Helvetica, sans-serif;
-  
-  
 }
-hr{
-  background-color: #BEA277;
-  
+hr {
+  background-color: #bea277;
 }
-
-
-
-
 
 @layer base {
   :root {
@@ -122,12 +113,11 @@ hr{
   }
 }
 
-
 /* The Overlay (background) */
 .overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 100%;
-  color: #BEA277;
+  color: #bea277;
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   right: 0;
@@ -154,7 +144,7 @@ hr{
   text-decoration: none;
   font-size: 36px;
   color: #BEA277; */
-  display: block; 
+  display: block;
   /* transition: 0.3s;  */
 }
 
@@ -173,12 +163,17 @@ hr{
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
+  .overlay a {
+    font-size: 20px;
+  }
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
   }
 }
-
-
+@media only screen and (min-width: 1280px) {
+  #party > div:last-child {
+    grid-column: 1 / span 2;
+  }
+}
