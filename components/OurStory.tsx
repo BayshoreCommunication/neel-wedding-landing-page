@@ -29,7 +29,7 @@ const OurStory = () => {
       </ScrollMotionEffect>
 
       <ScrollMotionEffect effect="fade-up" duration={2000}>
-        <div className=" text-center text-lg lg:w-[885px]">
+        <div className=" text-center text-lg lg:w-[885px] text-secondary">
           We met on Salams, where a conversation about penguins in South Africa
           sparked an unexpected connection. What started as lighthearted chatter
           quickly turned into endless conversations about everything from food
@@ -40,7 +40,7 @@ const OurStory = () => {
       </ScrollMotionEffect>
 
       <ScrollMotionEffect effect="fade-up" duration={2000}>
-        <div className=" text-center text-lg lg:w-[885px]">
+        <div className=" text-center text-lg lg:w-[885px] text-secondary">
           As we spent more time together, it became clear that what we had was
           something special. Neel knew, just days after returning from Boston,
           that he was going to marry Jasifa. For Jasifa, it was in the midst of
@@ -51,7 +51,7 @@ const OurStory = () => {
       </ScrollMotionEffect>
 
       <ScrollMotionEffect effect="fade-up" duration={2000}>
-        <div className=" text-center text-lg lg:w-[885px]">
+        <div className=" text-center text-lg lg:w-[885px] text-secondary">
           Now, here we are, stronger than ever, with penguins that mate for life
           as the symbol of our own journey, taking the next step to commit to
           each other forever.

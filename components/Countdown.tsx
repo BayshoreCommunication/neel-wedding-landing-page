@@ -18,7 +18,6 @@ const CountdownTimer = () => {
         if (remainingTime <= 0) {
           remainingTime = 0;
           clearInterval(countdownInterval);
-          alert("Countdown complete!");
         }
 
         setTimeRemaining(remainingTime);
@@ -51,7 +50,7 @@ const CountdownTimer = () => {
               {days.toString().padStart(2, "0")}
             </button>
           </ScrollMotionEffect>
-          <span className="text-sm">Days</span>
+          <span className="text-sm text-secondary">Days</span>
         </div>
         <div className="countdown-value flex justify-center items-center flex-col">
           <ScrollMotionEffect effect="flip-up" duration={2000}>
@@ -59,7 +58,7 @@ const CountdownTimer = () => {
               {hours.toString().padStart(2, "0")}
             </button>
           </ScrollMotionEffect>
-          <span className="text-sm">Hours</span>
+          <span className="text-sm text-secondary">Hours</span>
         </div>
         <div className="countdown-value flex justify-center items-center flex-col">
           <ScrollMotionEffect effect="flip-up" duration={2000}>
@@ -67,7 +66,7 @@ const CountdownTimer = () => {
               {minutes.toString().padStart(2, "0")}
             </button>
           </ScrollMotionEffect>
-          <span className="text-sm">Minutes</span>
+          <span className="text-sm text-secondary">Minutes</span>
         </div>
         <div className="countdown-value flex justify-center items-center flex-col">
           <ScrollMotionEffect effect="flip-up" duration={2000}>
@@ -75,7 +74,7 @@ const CountdownTimer = () => {
               {seconds.toString().padStart(2, "0")}
             </button>
           </ScrollMotionEffect>
-          <span className="text-sm">Seconds</span>
+          <span className="text-sm text-secondary">Seconds</span>
         </div>
       </div>
     );
@@ -84,7 +83,9 @@ const CountdownTimer = () => {
   return (
     <div className="countdown-timer-container flex flex-col justify-center items-center gap-4 relative -top-10 w-full">
       <ScrollMotionEffect effect="fade-up" duration={2000}>
-        <h2 className="countdown-name font-semibold text-2xl">COUNTDOWN</h2>
+        <h2 className="countdown-name font-semibold text-2xl text-secondary tracking-tight">
+          COUNTDOWN
+        </h2>
       </ScrollMotionEffect>
 
       <ScrollMotionEffect effect="fade-up" duration={2000}>

@@ -32,7 +32,7 @@ const Header = () => {
           JASIFA
         </div>
 
-        <ul className=" justify-between items-center gap-10 tracking-[3px] hidden lg:flex">
+        <ul className=" justify-between items-center gap-10 tracking-[3px] hidden lg:flex text-secondary">
           <li>
             <Link
               href=""
