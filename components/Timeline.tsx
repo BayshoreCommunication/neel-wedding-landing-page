@@ -11,10 +11,10 @@ const Timeline = () => {
     <section>
       {/* mobile view */}
       <ul className="timeline timeline-vertical text-primary block md:hidden float-left relative right-[30%] ">
-        <li className="h-60">
+        <li className="h-40">
           <div className="timeline-end ">
             <ScrollMotionEffect effect="zoom-in" duration={2000}>
-              <div className="flex flex-col justify-start items-start gap-6 relative translate-y-14 text-nowrap pl-[4rem] ">
+              <div className="flex flex-col justify-start items-start gap-3 relative translate-y-12 text-nowrap pl-[4rem] ">
                 <div className="text-3xl font-pinyon text-secondary ">
                   Day of the Wedding
                 </div>
@@ -34,12 +34,12 @@ const Timeline = () => {
           </div>
           <hr style={{ width: "2px" }} />
         </li>
-        <li className="h-60">
+        <li className="h-40">
           <hr style={{ width: "2px" }} />
           <div className="timeline-middle bg-white"></div>
           <div className="timeline-end ">
             <ScrollMotionEffect effect="zoom-in" duration={2000}>
-              <div className="flex flex-col justify-start items-start gap-6 relative translate-y-14 text-nowrap pl-[4rem]">
+              <div className="flex flex-col justify-start items-start gap-3 relative translate-y-12 text-nowrap pl-[4rem]">
                 <div className="text-3xl font-pinyon text-secondary">
                   Day of the Wedding
                 </div>
@@ -58,11 +58,11 @@ const Timeline = () => {
           </div>
           <hr style={{ width: "2px" }} />
         </li>
-        <li className="h-60">
+        <li className="h-40">
           <hr style={{ width: "2px" }} />
           <div className="timeline-end ">
             <ScrollMotionEffect effect="zoom-in" duration={2000}>
-              <div className="flex flex-col justify-start items-start gap-6 relative translate-y-20 pl-[4rem]">
+              <div className="flex flex-col justify-start items-start gap-3 relative translate-y-16 pl-[4rem]">
                 <div className="text-3xl font-pinyon text-secondary text-nowrap">
                   Day of the Wedding
                 </div>
@@ -81,11 +81,11 @@ const Timeline = () => {
           </div>
           <hr style={{ width: "2px" }} />
         </li>
-        <li className="h-60">
+        <li className="h-52">
           <hr style={{ width: "2px" }} />
           <div className="timeline-end ">
             <ScrollMotionEffect effect="zoom-in" duration={2000}>
-              <div className="flex flex-col justify-start items-start gap-6 relative translate-y-20 pl-[4rem]">
+              <div className="flex flex-col justify-start items-start gap-3 relative translate-y-16 pl-[4rem]">
                 <div className="text-3xl font-pinyon text-secondary text-nowrap ">
                   Day of the Wedding
                 </div>
@@ -104,11 +104,11 @@ const Timeline = () => {
           </div>
           <hr style={{ width: "2px" }} />
         </li>
-        <li className="h-60">
+        <li className="h-40">
           <hr style={{ width: "2px" }} />
           <div className="timeline-end ">
             <ScrollMotionEffect effect="zoom-in" duration={2000}>
-              <div className="flex flex-col justify-start items-start gap-6 relative translate-y-20 pl-[4rem]">
+              <div className="flex flex-col justify-start items-start gap-3 relative translate-y-16 pl-[4rem]">
                 <div className="text-3xl font-pinyon text-secondary text-nowrap ">
                   Day of the Wedding
                 </div>
@@ -127,12 +127,12 @@ const Timeline = () => {
           </div>
           <hr style={{ width: "2px" }} />
         </li>
-        <li className="h-60">
+        <li className="h-52">
           <hr style={{ width: "2px" }} />
           <div className="timeline-end ">
             {" "}
             <ScrollMotionEffect effect="zoom-in" duration={2000}>
-              <div className="flex flex-col justify-start items-start gap-6 relative translate-y-14 text-nowrap pl-[4rem]">
+              <div className="flex flex-col justify-start items-start gap-3 relative translate-y-12 text-nowrap pl-[4rem]">
                 <div className="text-3xl font-pinyon text-secondary">
                   Day of the Wedding
                 </div>
@@ -151,11 +151,11 @@ const Timeline = () => {
           </div>
           <hr style={{ width: "2px" }} />
         </li>
-        <li className="h-60">
+        <li className="h-28">
           <hr style={{ width: "2px" }} />
           <div className="timeline-end ">
             <ScrollMotionEffect effect="zoom-in" duration={2000}>
-              <div className="flex flex-col justify-start items-start gap-6 relative translate-y-24  pl-[4rem]">
+              <div className="flex flex-col justify-start items-start gap-3 relative translate-y-20  pl-[4rem]">
                 <div className="text-3xl font-pinyon text-secondary text-nowrap">
                   Day of the Wedding
                 </div>
@@ -174,7 +174,7 @@ const Timeline = () => {
           </div>
           <hr style={{ width: "2px" }} />
         </li>
-        <li className="h-60">
+        <li className="h-80">
           <hr style={{ width: "2px" }} />
           <div className="timeline-end ">
             <ScrollMotionEffect effect="zoom-in" duration={2000}>
@@ -195,7 +195,7 @@ const Timeline = () => {
               fill="#ffffff"
             />
           </div>
-          <hr style={{ width: "2px" }} />
+          <hr style={{ width: "2px" }} className="h-5" />
         </li>
       </ul>
       {/* Desktop view */}

@@ -172,8 +172,84 @@ hr {
     right: 35px;
   }
 }
+
+/* modify last child of an id */
 @media only screen and (min-width: 1280px) {
   #party > div:last-child {
     grid-column: 1 / span 2;
+  }
+}
+/* modify last child of an id */
+
+/* .css-typing p {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.css-typing p:nth-child(1) {
+  width: 20rem;
+  -webkit-animation: type 0.4s steps(100, end);
+  animation: type 0.4s steps(100, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+    border: none;
+  }
+  99.9% {
+    border: none;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+    border: none;
+  }
+  99.9% {
+    border: none;
+  }
+  100% {
+    border: none;
+  }
+} */
+
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border: none;
+  }
+  to {
+    border: none;
   }
 }

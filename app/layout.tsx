@@ -18,7 +18,7 @@ const geistMono = localFont({
 
 export const metadata = {
   title: "N and J",
-  description: "Welcome to Neel and Jasifa’s Wedding Website!",
+  description: "Welcome to Neel and Jasifa Wedding Website!",
   metadataBase: new URL("https://www.neelandjasifa.com"),
   alternates: {
     canonical: "/",
