@@ -295,3 +295,19 @@ hr {
   }
 }
 /* fade-in-down */
+
+.swal2-container {
+  z-index: 1050; /* Higher than your Dialog z-index */
+}
+
+.swal-confirm-btn {
+  background-color: #bea277 !important; /* Button color */
+  color: white !important; /* Text color */
+  border: none !important; /* Remove any borders */
+  z-index: 50 !important; /* Ensure the button stays visible */
+  cursor: pointer;
+}
+
+.swal-confirm-btn:hover {
+  background-color: #a89060 !important; /* Hover color */
+}

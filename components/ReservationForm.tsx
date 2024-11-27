@@ -14,6 +14,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { send } from "emailjs-com";
 import Swal from "sweetalert2";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 type EmailFormType = {
   name: string;
@@ -25,6 +27,7 @@ type EmailFormType = {
 type FormErrorsType = Partial<Record<keyof EmailFormType, string>>;
 
 const ReservationForm = () => {
+  const [confrimFlag, setConfrimFlag] = useState(false);
   const [emailForm, setEmailForm] = useState<EmailFormType>({
     name: "",
     phone: "",
@@ -71,6 +74,8 @@ const ReservationForm = () => {
       )
         .then((response) => {
           setLoading(false);
+          setConfrimFlag(true);
+          toast("Wow so easy!");
           Swal.fire({
             icon: "success",
             text: "Thank you for submitting your RSVP. Best regards!",

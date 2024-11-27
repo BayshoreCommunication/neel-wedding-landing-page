@@ -3,7 +3,7 @@ import { i, image } from "framer-motion/client";
 const cardData = [
   {
     id: 1,
-    title: "maid of honor",
+    title: "Maid of Honor",
     image: "/Mask group.png",
     name: "Hafeza Chowdhury",
     description:
@@ -15,11 +15,11 @@ const cardData = [
     image: "/Mask group (1).png",
     name: "Tahmid AArabeed",
     description:
-      "Meet Aradeed, my best man, is my lifelong confidant since USF. Known for his unwavering morals and values, he’s the steady force in my life. Always in his signature hoodie, he’s approachable and kind. A phenomenal chef, his meals bring people together, making every moment with him unforgettable. A true family.",
+      "Meet AArabeed, my best man, is my lifelong confidant since USF. Known for his unwavering morals and values, he’s the steady force in my life. Always in his signature hoodie, he’s approachable and kind. A phenomenal chef, his meals bring people together, making every moment with him unforgettable. A true family.",
   },
   {
     id: 3,
-    title: "matron of honor",
+    title: "Matron of Honor",
     image: "/Mask group (2).png",
     name: "Purna Chowdhury",
     description:
@@ -77,7 +77,7 @@ const cardData = [
     id: 10,
     title: "Groomsman",
     name: "Al Shahriar Shaan",
-    image: "/Mask group (9).png",
+    image: "/Group 119.png",
     description:
       "Meet Al Shahriar Shaan, my childhood best friend since preschool, reconnected at USF and now my business partner, is the ultimate groomsman. Known for his playful charm and constant teasing, he’s a loyal friend and a natural player. With Shaan, life’s always an adventure filled with wit, fun, and camaraderie.",
   },
@@ -96,13 +96,22 @@ const cardData = [
     image: "/Mask group (11).png",
     description:
       "Meet Shahriar Sikder, my dependable friend from USF, became a close bond through our shared passion for used cars. Reliable and always there when it counts, he’s the kind of friend who turns challenges into opportunities. Having him as a groomsman means having someone steadfast, supportive, and always ready to celebrate.",
-  },{
+  },
+  {
     id: 13,
     title: "Bridesmaid",
     name: "Jessica Saravia",
     image: "/Mask group (12).jpg",
     description:
       "Meet Jessica, Jessica and I went from being coworker to close friend over the years. We've faced challenges together at work and in life, and she's always been there with unwavering support and great advice. Her loyalty and friendship mean everything to me, and I’m so grateful to have her by my side on this big day of mines.",
+  },
+  {
+    id: 14,
+    title: "The Groomsmaid",
+    name: "Namira Iqbal",
+    image: "/Group 121.png",
+    description:
+      "Meet Namira, Namira and I graduated from USF around the same time, meeting through Shaan. We’ve bonded over exploring Tampa’s food scene and sharing similar dislikes. I often rely on her for advice—her insights are so sharp, I’d pay for her services if she were a consultant. A true, trusted friend.",
   },
 ];
 

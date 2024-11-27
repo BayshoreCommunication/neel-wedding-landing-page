@@ -62,9 +62,7 @@ const HeroSection = () => {
         </motion.div>
       </ScrollMotionEffect>
       <ScrollMotionEffect effect="fade-up" duration={2000}>
-        <div>
-          <ReservationForm />
-        </div>
+        <ReservationForm />
       </ScrollMotionEffect>
     </section>
   );
