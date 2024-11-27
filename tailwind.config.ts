@@ -9,6 +9,18 @@ export default {
   ],
   theme: {
   	extend: {
+		keyframes: {
+			"fade-in-up": {
+				"0%":{
+					opacity: "0",
+					transform: "translateY(100px)",
+				},
+				"100%":{
+					opacity:"1",
+					transform: "translateY(0)",
+				},
+			}
+		},
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

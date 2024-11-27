@@ -9,10 +9,10 @@ const OurStory = () => {
       className=" flex flex-col justify-center items-center gap-8 "
     >
       <div className="pt-24 flex flex-col lg:flex-row justify-center items-center gap-16 w-full">
-        <ScrollMotionEffect effect="zoom-in" duration={2000}>
+        <ScrollMotionEffect effect="flip-left" duration={2000}>
           <Image src={"/neel.png"} alt="neel" width={516} height={691} />
         </ScrollMotionEffect>
-        <ScrollMotionEffect effect="zoom-in" duration={2000}>
+        <ScrollMotionEffect effect="flip-right" duration={2000}>
           <Image src="/jasifa.png" alt="jasifa" width={516} height={691} />
         </ScrollMotionEffect>
       </div>

@@ -22,8 +22,8 @@ const HeroSection = () => {
 
   return (
     <section className="bg-heroImage bg-no-repeat bg-cover bg-center flex  flex-col justify-center items-center w-full h-[700px] pt-10">
-      <div className="css-typing text-5xl font-poppinsLight text-primary  tracking-[3px] pt-6">
-        <p className="text-center line-1 anim-typewriter">NEEL</p>
+      <div className="css-typing text-5xl font-poppinsLight text-primary  tracking-[3px] pt-6 w-fit">
+        <p className="text-center line-1 anim-typewriter ">NEEL</p>
       </div>
       <ScrollMotionEffect effect="zoom-in" duration={2000}>
         <div className="text-3xl font-pinyon text-secondary py-6 relative -translate-x-2">

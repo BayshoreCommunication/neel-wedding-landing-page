@@ -222,7 +222,7 @@ hr {
 .line-1 {
   position: relative;
   top: 50%;
-  width: 24em;
+  width: 5em;
   margin: 0 auto;
   border-right: 2px solid rgba(255, 255, 255, 0.75);
 
@@ -234,15 +234,15 @@ hr {
 
 /* Animation */
 .anim-typewriter {
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-    blinkTextCursor 500ms steps(44) infinite normal;
+  animation: typewriter 1s steps(10) 1s 1 normal both,
+    blinkTextCursor 500ms steps(10) infinite normal;
 }
 @keyframes typewriter {
   from {
     width: 0;
   }
   to {
-    width: 24em;
+    width: 5em;
   }
 }
 @keyframes blinkTextCursor {
@@ -253,3 +253,45 @@ hr {
     border: none;
   }
 }
+
+/* fade-in-up */
+.fade-in-up {
+  animation: fade-up 2s linear normal;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  80% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+/* fade-in-up */
+
+/* fade-in-down */
+.fade-in-down {
+  animation: fade-down 2s linear normal;
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  80% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+/* fade-in-down */
