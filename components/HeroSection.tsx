@@ -34,7 +34,7 @@ const HeroSection = () => {
         <p className="text-center line-1 anim-typewriter">JASIFA</p>
       </div>
       <ScrollMotionEffect effect="fade-up" duration={2000}>
-        <div className="text-lg tracking-[1px] pt-8 font-light">
+        <div className="text-lg tracking-[1px] pt-8 font-light text-secondary">
           January 5, 2025
         </div>
       </ScrollMotionEffect>
@@ -42,11 +42,13 @@ const HeroSection = () => {
         <motion.div variants={variants}>
           <HoverCard>
             <Link
-              className="flex flex-col justify-center items-center py-3 tracking-[1px]  font-light cursor-pointer hover:text-primary transition-all ease-in-out duration-300 underline w-[400px] text-center"
+              className="flex flex-col justify-center items-center py-3 tracking-[1px]  font-light cursor-pointer hover:text-primary transition-all ease-in-out duration-300 underline w-[400px] text-center text-secondary underline-secondary"
               href="https://www.google.com/maps/place/Islamic+Center+of+New+England+Mosque+(ICNE)+at+Sharon/@42.0956517,-71.2026788,14.86z/data=!4m6!3m5!1s0x89e47d63d2fa4c79:0x4e21ab6f5fee1ff2!8m2!3d42.0957079!4d-71.1951754!16zL20vMDdiOGs0?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D"
               target="_blank"
             >
-              <p>Islamic Center of New England Mosque (ICNE) at Sharon</p>
+              <p className="">
+                Islamic Center of New England Mosque (ICNE) at Sharon
+              </p>
             </Link>
 
             <HoverCardContent className="hover:border-primary cursor-pointer hover:text-primary transition-all ease-in-out duration-300 ">

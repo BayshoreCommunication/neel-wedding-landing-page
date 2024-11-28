@@ -104,7 +104,7 @@ const CountdownTimer = () => {
       </ScrollMotionEffect>
 
       <ScrollMotionEffect effect="fade-up" duration={2000}>
-        <div className="text-poppinsRegular text-lg text-center px-1 md:w-[636px] ">
+        <div className="text-poppinsRegular text-lg text-center px-1 md:w-[636px] text-secondary">
           <p className="py-2">{`Welcome to Neel and Jasifa’s Wedding Website!`}</p>
 
           <p className="py-2">{`We are beyond excited to have you with us as we celebrate the love we've found in each other and the incredible blessing of having family and friends like you by our side. This website is your one-stop shop for all the details you’ll need to join us in making this day unforgettable—from the wedding schedule to RSVP instructions. `}</p>
