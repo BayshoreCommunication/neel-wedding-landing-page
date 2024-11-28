@@ -174,11 +174,14 @@ hr {
 }
 
 /* modify last child of an id */
-@media only screen and (min-width: 1280px) {
+/* @media only screen and (min-width: 1280px) {
   #party > div:last-child {
     grid-column: 1 / span 2;
   }
-}
+} */
+
+
+
 /* modify last child of an id */
 
 /* .css-typing p {
