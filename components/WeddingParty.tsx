@@ -5,7 +5,7 @@ import ScrollMotionEffect from "./motion/ScrollMotionEffect";
 const WeddingParty = () => {
   return (
     <section
-      // id="party"
+      id="party"
       className=" grid grid-cols-1 xl:grid-cols-2 auto-cols-max pt-36 gap-x-10 2xl:gap-x-40 gap-y-20"
     >
       <div className="col-span-1 xl:col-span-2">
