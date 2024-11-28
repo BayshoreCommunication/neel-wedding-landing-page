@@ -13,9 +13,9 @@ const cardData = [
     id: 2,
     title: "Best Man",
     image: "/Mask group (1).png",
-    name: "Tahmid AArabeed",
+    name: "Tahmid ArAbeed",
     description:
-      "Meet AArabeed, my best man, is my lifelong confidant since USF. Known for his unwavering morals and values, he’s the steady force in my life. Always in his signature hoodie, he’s approachable and kind. A phenomenal chef, his meals bring people together, making every moment with him unforgettable. A true family.",
+      "Meet ArAbeed, my best man, is my lifelong confidant since USF. Known for his unwavering morals and values, he’s the steady force in my life. Always in his signature hoodie, he’s approachable and kind. A phenomenal chef, his meals bring people together, making every moment with him unforgettable. A true family.",
   },
   {
     id: 3,

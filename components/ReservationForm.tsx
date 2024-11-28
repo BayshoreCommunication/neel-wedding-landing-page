@@ -14,8 +14,9 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { send } from "emailjs-com";
 import Swal from "sweetalert2";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { DialogClose } from "@radix-ui/react-dialog";
+//import { ToastContainer, toast } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
 
 type EmailFormType = {
   name: string;
@@ -75,7 +76,7 @@ const ReservationForm = () => {
         .then((response) => {
           setLoading(false);
           setConfrimFlag(true);
-          toast("Wow so easy!");
+          //toast("Wow so easy!");
           Swal.fire({
             icon: "success",
             text: "Thank you for submitting your RSVP. Best regards!",
@@ -232,13 +233,17 @@ const ReservationForm = () => {
                   Sending...
                 </button>
               ) : (
-                <button
-                  type="submit"
-                  // onClick={handleSubmit}
-                  className="text-white bg-primary   font-medium  text-base w-full rounded  cursor-pointer px-5 py-2 xl:py-3 text-center"
-                >
-                  Submit
-                </button>
+                <DialogFooter className="text-center place-self-center">
+                  <DialogClose>
+                    <button
+                      type="submit"
+                      // onClick={handleSubmit}
+                      className="text-white bg-primary   font-medium  text-base w-44 rounded  cursor-pointer px-5 py-2 xl:py-3 text-center"
+                    >
+                      Submit
+                    </button>
+                  </DialogClose>
+                </DialogFooter>
               )}
             </form>
           </div>
