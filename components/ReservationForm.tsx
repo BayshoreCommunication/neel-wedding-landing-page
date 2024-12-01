@@ -223,7 +223,7 @@ const ReservationForm = () => {
                     type="radio"
                     name="dressCode"
                     value="#thealgorithmworks"
-                    className=""
+                    className=" accent-white  "
                     onChange={(event) => {
                       setEmailForm({
                         ...emailForm,
@@ -252,7 +252,7 @@ const ReservationForm = () => {
                         dressCode: event.target.value,
                       });
                     }}
-                    className="pl-10"
+                    className=" accent-white"
                   />
                   <label
                     htmlFor="#whensifametherneel"
