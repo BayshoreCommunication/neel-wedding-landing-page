@@ -147,7 +147,6 @@ const ReservationForm = () => {
                 <span className="text-red-500">{formErrors.name}</span>
               </div>
               {/* Last Name */}
-
               <div className="w-full mb-5">
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-md focus:ring-black focus:border-black block w-full p-2.5 py-2.5 placeholder:text-base pl-5"
@@ -165,7 +164,6 @@ const ReservationForm = () => {
                 />
                 <span className="text-red-500">{formErrors.email}</span>
               </div>
-
               <div className="mb-5 w-full flex flex-col md:flex-row gap-5">
                 {/* Phone Number */}
                 <div className=" w-full">
@@ -186,9 +184,8 @@ const ReservationForm = () => {
                   <span className="text-red-500">{formErrors.phone}</span>
                 </div>
               </div>
-
               {/* Text Area */}
-              <div className="mb-5">
+              {/* <div className="mb-5">
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-md focus:ring-black focus:border-black block w-full p-2.5 py-2.5 placeholder:text-base pl-5"
                   placeholder="Number of guests"
@@ -204,12 +201,51 @@ const ReservationForm = () => {
                   }}
                 />
                 <span className="text-red-500">{formErrors.guest}</span>
-              </div>
+              </div> */}
+              {/* <h5 className="text-primary text-xl pt-4 pb-2 tracking-widest w-full text-center">
+                Dress Code
+              </h5>
+              <h6 className="text-primary text-lg pb-7 font-light tracking-widest w-full text-center">
+                Modest Clothing
+              </h6> */}
+              <label className="text-primary text-xl pt-4 pb-5 tracking-widest w-full text-center">
+                Dress Code
+              </label>
+              <br />
+
+              <input
+                id="#thealgorithmworks"
+                type="checkbox"
+                name="dressCode"
+                value="#thealgorithmworks"
+                className="accent-primary"
+                required
+              />
+              <label
+                htmlFor="#thealgorithmworks"
+                className="text-primary text-lg inline pr-10 "
+              >
+                &nbsp;#thealgorithmworks
+              </label>
+
+              <input
+                id="#whensifametherneel"
+                type="checkbox"
+                name="dressCode"
+                value="#whensifametherneel"
+                className="accent-primary"
+              />
+              <label
+                htmlFor="#whensifametherneel"
+                className="text-primary text-lg inline"
+              >
+                &nbsp;#whensifametherneel
+              </label>
 
               {loading ? (
                 <button
                   type="submit"
-                  className="text-white bg-primary   font-medium  text-base w-full rounded  cursor-pointer px-5 py-2 xl:py-3 text-center flex items-center justify-center gap-x-2 "
+                  className="text-white bg-primary  pt-10 font-medium  text-base w-full rounded  cursor-pointer px-5 py-2 xl:py-3 text-center flex items-center justify-center gap-x-2 "
                 >
                   <div role="status">
                     <svg
@@ -233,7 +269,7 @@ const ReservationForm = () => {
                   Sending...
                 </button>
               ) : (
-                <DialogFooter className="text-center place-self-center">
+                <DialogFooter className="text-center pt-10 place-self-center">
                   <DialogClose>
                     <button
                       type="submit"
