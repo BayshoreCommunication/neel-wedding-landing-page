@@ -219,6 +219,12 @@ const ReservationForm = () => {
                 name="dressCode"
                 value="#thealgorithmworks"
                 className="accent-primary"
+                onChange={(event) => {
+                  setEmailForm({
+                    ...emailForm,
+                    name: event.target.value,
+                  });
+                }}
                 required
               />
               <label
@@ -233,6 +239,12 @@ const ReservationForm = () => {
                 type="checkbox"
                 name="dressCode"
                 value="#whensifametherneel"
+                onChange={(event) => {
+                  setEmailForm({
+                    ...emailForm,
+                    name: event.target.value,
+                  });
+                }}
                 className="accent-primary"
               />
               <label
