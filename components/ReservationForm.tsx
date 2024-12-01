@@ -23,6 +23,7 @@ type EmailFormType = {
   phone: string;
   email: string;
   guest: string;
+  dressCode: string;
 };
 
 type FormErrorsType = Partial<Record<keyof EmailFormType, string>>;
@@ -34,6 +35,7 @@ const ReservationForm = () => {
     phone: "",
     email: "",
     guest: "",
+    dressCode: "",
   });
 
   const [loading, setLoading] = useState<boolean>(false);
@@ -55,6 +57,9 @@ const ReservationForm = () => {
     }
     if (!values.guest) {
       errors.guest = "Number of guest is required!";
+    }
+    if (!values.dressCode) {
+      errors.dressCode = "Dress code is required!";
     }
     return errors;
   };
@@ -87,6 +92,7 @@ const ReservationForm = () => {
               phone: "",
               email: "",
               guest: "",
+              dressCode: "",
             });
           });
         })
@@ -101,6 +107,7 @@ const ReservationForm = () => {
               phone: "",
               email: "",
               guest: "",
+              dressCode: "",
             });
             setLoading(false);
           });
@@ -215,14 +222,14 @@ const ReservationForm = () => {
 
               <input
                 id="#thealgorithmworks"
-                type="checkbox"
+                type="radio"
                 name="dressCode"
                 value="#thealgorithmworks"
                 className="accent-primary"
                 onChange={(event) => {
                   setEmailForm({
                     ...emailForm,
-                    name: event.target.value,
+                    dressCode: event.target.value,
                   });
                 }}
                 required
@@ -236,13 +243,13 @@ const ReservationForm = () => {
 
               <input
                 id="#whensifametherneel"
-                type="checkbox"
+                type="radio"
                 name="dressCode"
                 value="#whensifametherneel"
                 onChange={(event) => {
                   setEmailForm({
                     ...emailForm,
-                    name: event.target.value,
+                    dressCode: event.target.value,
                   });
                 }}
                 className="accent-primary"
@@ -253,6 +260,7 @@ const ReservationForm = () => {
               >
                 &nbsp;#whensifametherneel
               </label>
+              <span className="text-red-500">{formErrors.dressCode}</span>
 
               {loading ? (
                 <button
