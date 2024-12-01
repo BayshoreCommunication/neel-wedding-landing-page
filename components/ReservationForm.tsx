@@ -215,7 +215,7 @@ const ReservationForm = () => {
               <h6 className="text-primary text-lg pb-7 font-light tracking-widest w-full text-center">
                 Modest Clothing
               </h6> */}
-              <label className="text-primary text-xl pt-4 pb-5 tracking-widest w-full text-center">
+              <label className="text-gray-400 text-lg pt-4 pb-5 tracking-widest w-full text-center">
                 Dress Code
               </label>
               <br />
@@ -225,7 +225,7 @@ const ReservationForm = () => {
                 type="radio"
                 name="dressCode"
                 value="#thealgorithmworks"
-                className="accent-primary"
+                className=""
                 onChange={(event) => {
                   setEmailForm({
                     ...emailForm,
@@ -236,7 +236,7 @@ const ReservationForm = () => {
               />
               <label
                 htmlFor="#thealgorithmworks"
-                className="text-primary text-lg inline pr-10 "
+                className="text-gray-400 text-lg inline pr-10 "
               >
                 &nbsp;#thealgorithmworks
               </label>
@@ -252,11 +252,11 @@ const ReservationForm = () => {
                     dressCode: event.target.value,
                   });
                 }}
-                className="accent-primary"
+                className=""
               />
               <label
                 htmlFor="#whensifametherneel"
-                className="text-primary text-lg inline"
+                className="text-gray-400 text-lg inline"
               >
                 &nbsp;#whensifametherneel
               </label>
