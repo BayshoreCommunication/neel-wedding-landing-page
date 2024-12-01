@@ -215,57 +215,60 @@ const ReservationForm = () => {
               <h6 className="text-primary text-lg pb-7 font-light tracking-widest w-full text-center">
                 Modest Clothing
               </h6> */}
-              <label className="text-gray-400 text-lg pt-4 pb-5 tracking-widest w-full text-center">
-                Dress Code
-              </label>
-              <br />
+              <div className="ml-5 flex flex-col gap-2">
+                <label className="text-gray-400 text-lg">Dress Code</label>
+                <div>
+                  <input
+                    id="#thealgorithmworks"
+                    type="radio"
+                    name="dressCode"
+                    value="#thealgorithmworks"
+                    className=""
+                    onChange={(event) => {
+                      setEmailForm({
+                        ...emailForm,
+                        dressCode: event.target.value,
+                      });
+                    }}
+                    required
+                  />
+                  <label
+                    htmlFor="#thealgorithmworks"
+                    className="text-gray-400 text-base inline text-poppinsRegular"
+                  >
+                    &nbsp;#thealgorithmworks
+                  </label>
+                </div>
 
-              <input
-                id="#thealgorithmworks"
-                type="radio"
-                name="dressCode"
-                value="#thealgorithmworks"
-                className=""
-                onChange={(event) => {
-                  setEmailForm({
-                    ...emailForm,
-                    dressCode: event.target.value,
-                  });
-                }}
-                required
-              />
-              <label
-                htmlFor="#thealgorithmworks"
-                className="text-gray-400 text-lg inline pr-10 "
-              >
-                &nbsp;#thealgorithmworks
-              </label>
+                <div>
+                  <input
+                    id="#whensifametherneel"
+                    type="radio"
+                    name="dressCode"
+                    value="#whensifametherneel"
+                    onChange={(event) => {
+                      setEmailForm({
+                        ...emailForm,
+                        dressCode: event.target.value,
+                      });
+                    }}
+                    className="pl-10"
+                  />
+                  <label
+                    htmlFor="#whensifametherneel"
+                    className="text-gray-400 text-base inline text-poppinsRegular"
+                  >
+                    &nbsp;#whensifametherneel
+                  </label>
+                </div>
 
-              <input
-                id="#whensifametherneel"
-                type="radio"
-                name="dressCode"
-                value="#whensifametherneel"
-                onChange={(event) => {
-                  setEmailForm({
-                    ...emailForm,
-                    dressCode: event.target.value,
-                  });
-                }}
-                className=""
-              />
-              <label
-                htmlFor="#whensifametherneel"
-                className="text-gray-400 text-lg inline"
-              >
-                &nbsp;#whensifametherneel
-              </label>
-              <span className="text-red-500">{formErrors.dressCode}</span>
+                <span className="text-red-500">{formErrors.dressCode}</span>
+              </div>
 
               {loading ? (
                 <button
                   type="submit"
-                  className="text-white bg-primary  pt-10 font-medium  text-base w-full rounded  cursor-pointer px-5 py-2 xl:py-3 text-center flex items-center justify-center gap-x-2 "
+                  className="text-white bg-primary  pt-6 font-medium  text-base w-full rounded  cursor-pointer px-5 py-2 xl:py-3 text-center flex items-center justify-center gap-x-2 "
                 >
                   <div role="status">
                     <svg
@@ -289,7 +292,7 @@ const ReservationForm = () => {
                   Sending...
                 </button>
               ) : (
-                <DialogFooter className="text-center pt-10 place-self-center">
+                <DialogFooter className="text-center pt-6 place-self-center">
                   <DialogClose>
                     <button
                       type="submit"
