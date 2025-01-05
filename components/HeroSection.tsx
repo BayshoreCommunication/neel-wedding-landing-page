@@ -35,7 +35,7 @@ const HeroSection = () => {
       </div>
       <ScrollMotionEffect effect="fade-up" duration={2000}>
         <div className="text-lg tracking-[1px] pt-8 font-light text-secondary">
-          January 5, 2025
+          5th Jan EST, 2025
         </div>
       </ScrollMotionEffect>
       <ScrollMotionEffect effect="fade-up" duration={2000}>

@@ -4,16 +4,20 @@ import React, { useState, useEffect } from "react";
 import ScrollMotionEffect from "./motion/ScrollMotionEffect";
 
 const CountdownTimer = () => {
-  const eventDate = "Jan 5, 2025";
+  const eventDate = "Jan 5, 2025 15:30:00";
   const countdownStarted = true;
   const [timeRemaining, setTimeRemaining] = useState(0);
 
   useEffect(() => {
     if (countdownStarted && eventDate) {
       const countdownInterval = setInterval(() => {
-        const currentTime = new Date().getTime();
+        const currentTime = new Date().toLocaleString("en-US", {
+          timeZone: "America/New_York",
+        });
+
         const eventTime = new Date(eventDate).getTime();
-        let remainingTime = eventTime - currentTime;
+        let remainingTime = eventTime - new Date(currentTime).getTime();
+        console.log(remainingTime);
 
         if (remainingTime <= 0) {
           remainingTime = 0;
